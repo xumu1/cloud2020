@@ -48,6 +48,7 @@ public class PaymentService {
 
         return Thread.currentThread().getName()+"\t"+"调用成功,流水号："+serialNumber;
     }
+
     public String paymentCircuitBreaker_fallback(@PathVariable("id") Integer id){
         return "id 不能负数，请稍候再试,(┬＿┬)/~~     id: " +id;
     }
